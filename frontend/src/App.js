@@ -1,12 +1,13 @@
-import Login from './components/Login';
+import { Routes, Route } from 'react-router-dom';
+import AdminLogin from './components/AdminLogin';
+import UserLogin from './components/UserLogin';
 
 function App() {
   return (
-    <div className="bg-gray-200 flex items-center justify-center">
-    <div className="max-w-md w-full space-y-8">
-      <Login />
-    </div>
-    </div>
+   <Routes>
+   <Route path='/' element={<UserLogin/>} />
+   <Route path='/admin-login' element={<AdminLogin/>} />
+    </Routes>
   );
 }
 
