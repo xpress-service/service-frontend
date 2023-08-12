@@ -16,7 +16,7 @@ describe('RegistrationFormContainer', () => {
     expect(screen.getByLabelText(/Address/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/City/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Zip Code/i)).toBeInTheDocument();
-  });
+  }); 
 
   test('submits the form', () => {
     render(<RegistrationFormContainer />);
