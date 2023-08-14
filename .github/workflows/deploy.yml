@@ -40,12 +40,10 @@ jobs:
         run: git config --global user.name "service_xpress"
       - name: commit changes
         run: git commit -m "new build"
-      - name: Deploy to FTP server
+      - name: upload
         uses: SamKirkland/FTP-Deploy-Action@4.3.3 
         with:
-          server: nl1-ss105.a2hosting.com
+          server: nl1-ss105.a2hosting.com/api.servicexpress.com
           username: servi151
           password: ${{ secrets.SERVER_SECRETE }}
-          local-dir: ./
-
           
