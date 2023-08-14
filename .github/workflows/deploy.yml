@@ -46,4 +46,4 @@ jobs:
           server: nl1-ss105.a2hosting.com
           username: servi151
           password: ${{ secrets.SERVER_SECRETE }}
-          local-dir: ./build/
+          local-dir: ./
