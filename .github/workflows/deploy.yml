@@ -43,6 +43,6 @@ jobs:
       - name: upload
         uses: SamKirkland/FTP-Deploy-Action@4.3.3 
         with:
-          server: nl1-ss105.a2hosting.com/servicexpress.com
+          server: nl1-ss105.a2hosting.com
           username: servi151
           password: ${{ secrets.SERVER_SECRETE }}
