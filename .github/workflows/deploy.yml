@@ -41,8 +41,8 @@ jobs:
       - name: commit changes
         run: git commit -m "new build"
       - name: upload
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0 
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3 
         with:
-          server: ftp://nl1-ss105.a2hosting.com/public_html
+          server: nl1-ss105.a2hosting.com/public_html
           username: servi151
           password: ${{ secrets.SERVER_SECRETE }}
