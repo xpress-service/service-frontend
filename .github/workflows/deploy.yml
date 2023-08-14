@@ -41,7 +41,7 @@ jobs:
       - name: commit changes
         run: git commit -m "new build"
       - name: upload
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           ftp-server: ftp://nl1-ss105.a2hosting.com/servicexpress.com
           ftp-username: servi151
