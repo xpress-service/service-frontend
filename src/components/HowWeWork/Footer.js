@@ -1,9 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-//footer
-=======
-
->>>>>>> sprint-1
 const Footer = () => {
   return (
     <div className='flex flex-row bg-amber-600 gap-52 justify-center items-center'>
