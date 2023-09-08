@@ -21,10 +21,10 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-amber-400 min-h-screen flex flex-col">
+    <div className="bg-amber-600 min-h-screen flex flex-col">
          <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
            <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full rounded-3xl">
-        <p className="cursor-pointer text-lg text-slate-400">X</p>
+        {/* <p className="cursor-pointer text-lg text-slate-400">X</p> */}
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -73,7 +73,7 @@ const Login = () => {
               </button>
             </div>
             <div className="flex items-center justify-center">
-              <p className="text-sm font-medium text-amber-400 hover:text-amber-200">
+              <p className="text-sm font-medium text-amber-600 hover:text-amber-200">
                 Forgotten password
               </p>
             </div>
