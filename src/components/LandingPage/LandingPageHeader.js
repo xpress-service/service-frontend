@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../icons/logo.svg";
+import { Link } from "react-router-dom";
 
 export const LandingPageHeader = () => {
   const [activePage, setActivePage] = useState("Home"); // Initialize active page
@@ -54,7 +55,7 @@ export const LandingPageHeader = () => {
       </div>
 
       <div className="flex items-center mt-2 md:mt-0 md:flex-wrap gap-4 pr-4">
-        <button className="text-md text-black border-collapse">Login</button>
+        <Link to='/user-login'><button className="text-md text-black border-collapse">Login</button></Link>
         <p className="text-md text-white bg-amber-600 border rounded-3xl py-1 px-3 md:px-4">
           Get Started
         </p>

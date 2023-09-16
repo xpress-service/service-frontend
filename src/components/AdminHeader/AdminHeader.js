@@ -18,7 +18,7 @@ const AdminHeader = ({ page, setQuery }) => {
 
   
   return (
-    <nav className="sticky top-0 w-full flex items-center justify-between h-16 px-8 bg-[#F7F9FD] rounded-full">
+    <nav className="w-[1400px] flex items-center justify-between h-16 px-8 bg-[#F7F9FD] rounded-full fixed top-0 left-0 right-0 p-4 ml-80">
       <form className="relative sm:w-1/2 w-2/5 flex items-center">
         <input
           type="search"
