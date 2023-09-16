@@ -8,6 +8,7 @@ import AdminManageUser from './pages/AdminManageUser';
 import AdminHeader from './components/AdminHeader/AdminHeader';
 import AdminSideNav from './components/AdminSideNav/AdminSideNav'
 import AdminDashboard from './pages/AdminDashboard';
+import UserDashboard from './pages/UserDashboard';
 import ManageBookings from './pages/ManageBookings';
 import AdminProfile from './pages/AdminProfile'
 
@@ -25,6 +26,7 @@ function App() {
    <Route path='/admin-header' element={<AdminHeader/>} />
    <Route path='/adminside-nav' element={<AdminSideNav/>} />
    <Route path='/admin-dashboard' element={<AdminDashboard/>} />
+   <Route path='/user-dashboard' element={<UserDashboard/>} />
    <Route path='/manage' element={<ManageBookings/>} />
    <Route path='/profile' element={<AdminProfile/>} />
     </Routes>
