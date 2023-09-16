@@ -16,8 +16,8 @@ import AdminProfile from './pages/AdminProfile'
 function App() {
   return (
    <Routes>
-   <Route path='/' element={<UserLogin/>} />
-   <Route path='/landing-page' element={<LandingPage/>} />
+   <Route path='/user-login' element={<UserLogin/>} />
+   <Route path='/' element={<LandingPage/>} />
    <Route path='/admin-login' element={<AdminLogin/>} />
    <Route path='/user-reg' element={<UserRegForm/>} />
    <Route path='/admin-reg' element={<AdminRegForm/>} />
@@ -26,7 +26,7 @@ function App() {
    <Route path='/adminside-nav' element={<AdminSideNav/>} />
    <Route path='/admin-dashboard' element={<AdminDashboard/>} />
    <Route path='/manage' element={<ManageBookings/>} />
-   <Route path='/profile' element={<AdminProfile/>} /> 
+   <Route path='/profile' element={<AdminProfile/>} />
     </Routes>
   );
 }

@@ -1,4 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Link } from "react-router-dom";
 import * as Yup from "yup";
 
 const AdminLogin = () => {
@@ -64,13 +65,13 @@ const AdminLogin = () => {
             </div>
 
             <div>
-              <button
+            <Link to='/admin-dashboard'>  <button
                 type="submit"
                 className="group relative w-full flex justify-center py-2 px-4 border rounded-3xl border-transparent text-sm font-medium rounded-md text-white bg-amber-400 hover:bg-amber-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300"
               >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3"></span>
                 Login
-              </button>
+              </button></Link>
             </div>
             <div className="flex items-center justify-center">
               <p className="text-sm font-medium text-amber-600 hover:text-amber-200">
