@@ -5,7 +5,7 @@ import editicon from '../../icons/editicon.svg'
 import user from '../../icons/images/user.svg'
 const Bookings = () => {
   return (
-    <div>
+    <div className='bg-slate-100'>
       <div className='flex flex-row justify-between bg-white mt-5 px-8'>
 <p className='font-bold text-md'>Users/Bookings</p>
 <img src={editicon} alt='' width={20} className='mr-12'/>
