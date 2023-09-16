@@ -5,7 +5,7 @@ import deleteicon from '../../icons/deleteicon.svg'
 
 const Location = () => {
   return (
-    <div className='flex flex-col mt-5 bg-white w-full py-2 px-2'>
+    <div className='flex flex-col mt-5 bg-white w-full py-2 px-2 bg-slate-100'>
       <div className='flex flex-row justify-between px-8'>
 <p className='font-bold text-md'>Recognize Location</p>
 <img src={editicon} alt='' width={20} className='mr-12'/>

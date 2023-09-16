@@ -6,7 +6,7 @@ import user from '../../icons/images/user.svg'
 
 const Vendors = () => {
   return (
-    <Fragment>
+    <div className='bg-slate-100'>
       <div className='flex flex-row justify-between bg-white w-full mt-5 px-8'>
 <p className='font-bold text-md'>Vendors</p>
 <img src={editicon} alt=''width={20} className='mr-12'/>
@@ -27,7 +27,7 @@ const Vendors = () => {
     <div className='flex justify-end mt-3 mr-20'>
     <button className='bg-amber-600 rounded-3xl text-white px-2 py-1'>View More</button>
     </div>
-    </Fragment>
+    </div>
   )
 }
 
