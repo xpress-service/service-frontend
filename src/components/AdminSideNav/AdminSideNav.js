@@ -23,7 +23,7 @@ const AdminSideNav = ({ page }) => {
   return (
     <div className="bg-[#FF9B05]">
     
-      <div className="relative h-screen flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55 ml-8">
+      <div className="relative h-[125vh] flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55">
         {/* <Link to="/candidate-dashboard" className={LinkReset}>
           <div className="flex items-center px-2">
             <img src={logo} alt="Edge" className="w-20" />
@@ -39,7 +39,7 @@ const AdminSideNav = ({ page }) => {
             </span>
           </Link>
 
-          <Link to="/manage-user" className={LinkReset}>
+          <Link to="/manage" className={LinkReset}>
             <span className={activeLink === "manage" ? currentPage : regularPage} onClick={() => handleLinkClick('manage')}>
               <MdWork size={24} className="mr-4" /> MANAGE
             </span>
