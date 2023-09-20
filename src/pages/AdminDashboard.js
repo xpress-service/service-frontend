@@ -3,20 +3,18 @@ import React, {useState} from 'react';
 import AdminSideNav from '../components/AdminSideNav/AdminSideNav';
 import AdminHeader from '../components/AdminHeader/AdminHeader';
 import { FaUser } from "react-icons/fa"
-import AdminLayout from '../components/AdminLayout/AdminLayout';
 
-const PendingBookingsTable = ({ bookings }) => {
+const AdminDashboard = ({ bookings }) => {
   const [user, setUser] = useState({})
   return (
-    <AdminLayout>
     <div className='flex mt-6 bg-[#FF9B05] w-full'>
-      {/* <div className='mx-5 my-5'>
+      <div className='mx-5 my-5'>
       <AdminSideNav/>
-      </div> */}
+      </div>
       <div className='flex-1 flex flex-col conatiner w-full  mt-4'>
-        {/* <div className='ml-4 mr-5'>
+        <div className='ml-4 mr-5'>
       <AdminHeader/>
-      </div> */}
+      </div>
       <div className='flex'>
       <div className="w-3/5 p-4">
       <div className="bg-[#F4F4F4] shadow-md rounded-2xl overflow-hidden">
@@ -675,8 +673,7 @@ const PendingBookingsTable = ({ bookings }) => {
     
     </div>
     </div> 
-    </AdminLayout>
   );
 };
 
-export default PendingBookingsTable;
+export default AdminDashboard;
