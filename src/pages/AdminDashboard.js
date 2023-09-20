@@ -1,17 +1,17 @@
-// src/components/BookingsTable.js
+/// src/components/BookingsTable.js
 import React, {useState} from 'react';
 import AdminSideNav from '../components/AdminSideNav/AdminSideNav';
 import AdminHeader from '../components/AdminHeader/AdminHeader';
 import { FaUser } from "react-icons/fa"
 
-const AdminDashboard = ({ bookings }) => {
+const PendingBookingsTable = ({ bookings }) => {
   const [user, setUser] = useState({})
   return (
-    <div className='flex mt-6 bg-[#FF9B05] w-full'>
+    <div className='flex  overflow-auto bg-[#FF9B05]'>
       <div className='mx-5 my-5'>
       <AdminSideNav/>
       </div>
-      <div className='flex-1 flex flex-col conatiner w-full  mt-4'>
+      <div className='flex-1 flex flex-col conatiner  mt-4'>
         <div className='ml-4 mr-5'>
       <AdminHeader/>
       </div>
@@ -346,7 +346,7 @@ const AdminDashboard = ({ bookings }) => {
 
     <div className='flex'>
       <div className="w-3/5 p-4">
-      <div className="bg-[#F4F4F4] shadow-md rounded-2xl">
+      <div className="bg-[#F4F4F4] shadow-md rounded-2xl overflow-hidden">
         <h2 className='font-bold text-xl mx-4 my-2'>BOOKINGS CONFIRMED</h2>
       <table className="border border-seperate min-w-full bg-white border-spacing-4">
       <thead>
@@ -676,4 +676,4 @@ const AdminDashboard = ({ bookings }) => {
   );
 };
 
-export default AdminDashboard;
+export default PendingBookingsTable;
