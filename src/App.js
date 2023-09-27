@@ -11,6 +11,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import UserDashboard from './pages/UserDashboard';
 import ManageBookings from './pages/ManageBookings';
 import AdminProfile from './pages/AdminProfile'
+import AboutUs from './components/LandingPage/AboutUs';
 
 
 
@@ -29,6 +30,7 @@ function App() {
    <Route path='/user-dashboard' element={<UserDashboard/>} />
    <Route path='/manage' element={<ManageBookings/>} />
    <Route path='/profile' element={<AdminProfile/>} />
+   <Route path='/about' element={<AboutUs/>} />
     </Routes>
   );
 }
