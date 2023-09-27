@@ -4,15 +4,16 @@ import aboutimage2 from '../../icons/aboutimage2.svg'
 import aboutimage3 from '../../icons/aboutimage3.svg'
 import aboutimage4 from '../../icons/aboutimage4.svg'
 import aboutimage5 from '../../icons/aboutimage5.svg'
-import aboutimage6 from '../../icons/aboutimage7.svg'
+import aboutimage6 from '../../icons/aboutimage6.svg'
+import aboutimage7 from '../../icons/aboutimage7.svg'
 
 
 const AboutUs = () => {
   return (
-    <div>
-      <div className='w-[1440px] h-[132px] bg-[#FF9B05] text-white'>
-        About US
-        </div> 
+    <div className='flex flex-col items-center justify-center py-4 px-8 gap-10'>
+      <div className='w-[1440px] h-[132px] bg-[#FF9B05] flex flex-col justify-center items-center mb-5'>
+  <h2 className='text-white text-center text-5xl'>About Us</h2>
+</div> 
         
         <div className='flex flex-row gap-3'>
         <div className=''>
@@ -118,6 +119,52 @@ Speed and Convenience: ServiceXpress are designed to provide fast and convenient
             </div>
             
           </div>
+          <div className='bg-[#FF9B05] w-[1442px] h-[274px]'>
+            <h2 style={{textAlign:'center',
+              Width: '316px',
+Height: '50px',
+Top: '2334px',
+Left: '565px', 
+font: 'Montserrat',
+fontWeight:'700',
+fontSize: '40px',
+color: 'white',
+LineHeight: '48.76px'}}>ServiceXpress</h2>
+            <p style={{Width:'1315px', Height:'116px', Top:'2401px', Left:'65px', padding:'8px', 
+font:'Montserrat', fontWeight:'500', fontSize:'24px', LineHeight:'29.26px', textAlign:'Justified', color:'white'}}>
+            &ldquo; It’s a fast and expedited delivery service designed to link users to vendor easily without stress. This type of service is characterized by its emphasis on speed and efficiency.  
+            ServiceXpress play a vital role in the logistics and supply chain industry, ensuring that time-sensitive goods and service request reach their destinations efficiently.
+            Businesses and individuals alike rely on ServiceXpress for a wide range of needs,&rdquo; 
+            </p>
+            </div>
+            <div className='flex flex-col bg-[#000000] w-[1281px] h-[457px] rounded-3xl px-8'>
+              <h2 className='text-white' style={{Width:'589px', Height:'116px', Top:'2730px', Left:'133px',
+            Font:'Inter',
+            fontWeight:'600',
+            fontSize:'48px',
+            LineHeight:'58.09px'}}>
+              Enjoy more of our service<br/>
+through app
+              </h2>
+              <p className='text-white' style={{Width:'704px', Height:'58px',
+Top:'2889px',
+Left:'133px',
+Font:'Inter',
+fontWeight:'400',
+fontSize:'24px',
+LineHeight:'29.05px'}}>
+              Get our mobile app on any device you use on the App Store or<br/>
+Google Playstore</p>
+          <div className='flex flex-row justify-between'>
+            <div className='flex flex-row p-3 gap-8 mt-10'>
+<img src={aboutimage5} alt=''/>
+<img src={aboutimage6} alt=''/>
+</div>
+<div className='flex justify-end' style={{marginTop: '-10rem'}}>
+  <img src={aboutimage7} alt=''/>
+</div>
+            </div>
+            </div>
     </div>
   )
 }

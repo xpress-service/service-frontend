@@ -43,7 +43,7 @@ export const LandingPageHeader = () => {
           >
             History
           </li>
-          <li
+         <Link to='/about'> <li
             className={`font-bold ${
               activePage === "About Us" ? "text-amber-600" : ""
             }`}
@@ -51,14 +51,16 @@ export const LandingPageHeader = () => {
           >
             About Us
           </li>
+          </Link>
         </ul>
       </div>
 
       <div className="flex items-center mt-2 md:mt-0 md:flex-wrap gap-4 pr-4">
         <Link to='/user-login'><button className="text-md text-black border-collapse">Login</button></Link>
-        <p className="text-md text-white bg-amber-600 border rounded-3xl py-1 px-3 md:px-4">
+        <Link to='/user-login'><p className="text-md text-white bg-amber-600 border rounded-3xl py-1 px-3 md:px-4">
           Get Started
         </p>
+        </Link>
       </div>
     </div>
   );
