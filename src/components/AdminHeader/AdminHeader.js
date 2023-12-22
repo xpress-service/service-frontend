@@ -1,24 +1,24 @@
 import React, { useState} from "react"
-//import { useNavigate } from "react-router-dom"
-//import axios from "../api/axios"
-// import {
-//   BsCaretDownFill,
-// } from "react-icons/bs"
-
+import { useNavigate } from "react-router-dom"
+import axios from "../../api/axios"
+import {
+  BsCaretDownFill,
+} from "react-icons/bs"
 
 import { FaUser } from "react-icons/fa"
 import { IoIosSearch } from "react-icons/io"
-//import useAuth from "../hooks/useAuth"
+import useAuth from "../../hooks/useAuth"
+import AdminMenu from "../AdminMenu/AdminMenu"
 
 const AdminHeader = ({ page, setQuery }) => {
   const [user, setUser] = useState({})
-  //const { auth } = useAuth()
-  //const navigate = useNavigate()
-  //const [isOpen, setIsOpen] = useState(false)
+  const { auth } = useAuth()
+  const navigate = useNavigate()
+  const [isOpen, setIsOpen] = useState(false)
 
   
   return (
-    <nav className="w-[1400px] flex items-center justify-between h-16 px-8 bg-[#F7F9FD] rounded-full fixed top-0 left-0 right-0 p-4 ml-80">
+    <nav className="sticky top-0 w-full flex items-center justify-between h-16 px-8 bg-[#F7F9FD] rounded-full">
       <form className="relative sm:w-1/2 w-2/5 flex items-center">
         <input
           type="search"
@@ -34,6 +34,7 @@ const AdminHeader = ({ page, setQuery }) => {
        
         <span
           className="flex flex-col items-center justify-center hover:text-gray-800 cursor-pointer relative"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <span className="w-6 h-6 flex justify-center rounded-full bg-gray-300 relative">
           {user?.avatar ? (
@@ -50,10 +51,15 @@ const AdminHeader = ({ page, setQuery }) => {
               />
             )}
           </span>
+          <span className="flex items-center">
+            <p className="text-xs sm:block hidden sm:mr-1 mr-0">Me</p>
+            <BsCaretDownFill size={12} />
+          </span>
+          {isOpen && <AdminMenu />}
         </span>
       </div>
     </nav>
   )
 }
 
-export default AdminHeader
+export default AdminHeader;

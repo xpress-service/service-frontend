@@ -1,0 +1,15 @@
+
+.password {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  
