@@ -5,9 +5,10 @@ import { TextField, Button, Container, Typography, Box } from '@mui/material';
 const PageTwo = ({ handlePrevious }) => {
   const formik = useFormik({
     initialValues: {
-      address: '',
-      city: '',
-      zipCode: '',
+      name: '',
+      email: '',
+      password: '',
+      confirm_password: '',
     },
     onSubmit: (values) => {
       console.log('Form data page 2:', values);
@@ -17,30 +18,65 @@ const PageTwo = ({ handlePrevious }) => {
   return (
     <Container maxWidth="xs"  className="rounded-2xl shadow-sm-space-y-px bg-white mt-20">
       <Box my={3}>
-        <Typography style={{marginBottom:"20px"}}> step 2/2 </Typography>
+        <Typography  style={{marginBottom:"20px", textAlign:"center", fontWeight:"bold"}}> SIGNUP </Typography>
         <form onSubmit={formik.handleSubmit}>
           <TextField
             fullWidth
-            id="gender"
-            name="gender"
-            label="Gender"
+            id="name"
+            name="name"
+            label="Fullname"
+            type='text'
             size="small"
-            value={formik.values.gender}
+            value={formik.values.name}
             onChange={formik.handleChange}
-            error={formik.touched.gender && Boolean(formik.errors.gender)}
-            helperText={formik.touched.gender && formik.errors.gender}
+            error={formik.touched.name && Boolean(formik.errors.name)}
+            helperText={formik.touched.name && formik.errors.name}
             margin="normal"
           />
-          <Typography style={{marginTop:"10px", marginBottom:"10px"}}>People who use or service may have upload a poll that contain your information to PollRank</Typography>
-          <Typography style={{marginTop:"10px", marginBottom:"10px"}}>By Tapping Signup I've read and agree to our term and condition Use.that bide the management of PollRank </Typography>
-          <Box style={{display:'flex', alignItems:"end", justifyItems:"center", justifyContent:"space-around"}}>
-          <Button type="button" onClick={handlePrevious} style={{backgroundColor:'#FFB03A', color:'#fff', size:'small',borderRadius:'20px', textTransform:'none'}}>
-            Previous
-          </Button>
-          <Button type="submit"  style={{backgroundColor:'#FFB03A', color:'#fff', borderRadius:'20px', textTransform:'none'}}>
+          <TextField
+            fullWidth
+            id="email"
+            name="email"
+            label="email"
+            type='email'
+            size="small"
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            error={formik.touched.email && Boolean(formik.errors.email)}
+            helperText={formik.touched.email && formik.errors.email}
+            margin="normal"
+          />
+          <TextField
+            fullWidth
+            id="password"
+            name="password"
+            label="Password"
+            type='password'
+            size="small"
+            value={formik.values.password}
+            onChange={formik.handleChange}
+            error={formik.touched.password && Boolean(formik.errors.password)}
+            helperText={formik.touched.password && formik.errors.password}
+            margin="normal"
+          />
+          <TextField
+            fullWidth
+            id="confirmPassword"
+            name="confirmPassword"
+            label="Confirm Password"
+            type='password'
+            size="small"
+            value={formik.values.confirmPassword}
+            onChange={formik.handleChange}
+            error={formik.touched.confirmPassword && Boolean(formik.errors.confirmPassword)}
+            helperText={formik.touched.confirmPassword && formik.errors.confirmPassword}
+            margin="normal"
+          />
+          <Typography style={{marginTop:"10px", marginBottom:"10px"}}>People who use our service may have upload a poll that contain your information to PollRank</Typography>
+          <Typography style={{marginTop:"10px", marginBottom:"10px"}}>By Tapping Signup I've read and agree to our term and condition Used that bide the management of PollRank </Typography>
+          <Button type="submit"  style={{backgroundColor:'#FFB03A', color:'#fff', borderRadius:'20px', textTransform:'none'}} fullWidth>
             Signup
           </Button>
-          </Box>
         </form>
       </Box>
     </Container>
