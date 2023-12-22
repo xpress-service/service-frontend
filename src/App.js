@@ -15,6 +15,7 @@ import UserTracking from './pages/UserTracking'
 import AdminDashboard from './pages/AdminDashboard';
 import UserDashboard from './pages/UserDashboard';
 import ManageBookings from './pages/ManageBookings';
+import AboutUs from './components/LandingPage/AboutUs';
 import AdminProfile from './pages/AdminProfile';
 import UserProfile from './pages/UserProfile';
 //import RequireUser from "./layout/RequireUser";
@@ -34,6 +35,9 @@ const queryClient = new QueryClient({
     },
   },
 })
+
+
+
 
 
 
@@ -71,6 +75,8 @@ function App() {
 
     {/**catch all*/}
     {/* <Route path="*" element={<ErrorPage />} />  */}
+
+   <Route path='/about' element={<AboutUs/>} />
     </Routes>
     </HelmetProvider>
 
