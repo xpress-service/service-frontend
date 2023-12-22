@@ -45,9 +45,9 @@ const AdminSideNav = ({ page }) => {
             </span>
           </Link>
 
-          <Link to="/profile" className={LinkReset}>
+          <Link to="/admin-profile" className={LinkReset}>
             <span
-              className={activeLink === "profile" ? currentPage : regularPage} onClick={() => handleLinkClick('profile')}
+              className={activeLink === "admin-profile" ? currentPage : regularPage} onClick={() => handleLinkClick('admin-profile')}
             >
               <CgProfile size={24} className="mr-4" /> PROFILE
             </span>

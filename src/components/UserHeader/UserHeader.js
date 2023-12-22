@@ -1,20 +1,20 @@
 import React, { useState} from "react"
-//import { useNavigate } from "react-router-dom"
-//import axios from "../api/axios"
-// import {
-//   BsCaretDownFill,
-// } from "react-icons/bs"
-
+import { useNavigate } from "react-router-dom"
+import axios from "../../api/axios"
+import {
+  BsCaretDownFill,
+} from "react-icons/bs"
 
 import { FaUser } from "react-icons/fa"
 import { IoIosSearch } from "react-icons/io"
-//import useAuth from "../hooks/useAuth"
+import useAuth from "../../hooks/useAuth"
+import UserMenu from "../UserMenu/UserMenu"
 
 const UserHeader = ({ page, setQuery }) => {
   const [user, setUser] = useState({})
-  //const { auth } = useAuth()
-  //const navigate = useNavigate()
-  //const [isOpen, setIsOpen] = useState(false)
+  const { auth } = useAuth()
+  const navigate = useNavigate()
+  const [isOpen, setIsOpen] = useState(false)
 
   
   return (
@@ -34,6 +34,7 @@ const UserHeader = ({ page, setQuery }) => {
        
         <span
           className="flex flex-col items-center justify-center hover:text-gray-800 cursor-pointer relative"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <span className="w-6 h-6 flex justify-center rounded-full bg-gray-300 relative">
           {user?.avatar ? (
@@ -50,6 +51,11 @@ const UserHeader = ({ page, setQuery }) => {
               />
             )}
           </span>
+          <span className="flex items-center">
+            <p className="text-xs sm:block hidden sm:mr-1 mr-0">Me</p>
+            <BsCaretDownFill size={12} />
+          </span>
+          {isOpen && <UserMenu />}
         </span>
       </div>
     </nav>

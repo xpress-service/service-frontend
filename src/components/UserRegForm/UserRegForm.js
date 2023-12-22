@@ -14,9 +14,9 @@ const RegistrationFormContainer = () => {
   };
 
   return currentPage === 1 ? (
-    <div  className="bg-amber-600 min-h-screen flex flex-col"><PageOne handleNext={handleNext} /></div>
+    <div  className="bg-[#FF9B05] min-h-screen flex flex-col"><PageOne handleNext={handleNext} /></div>
   ) : (
-    <div className="bg-amber-600 min-h-screen flex flex-col"><PageTwo handlePrevious={handlePrevious} /></div>
+    <div className="bg-[#FF9B05] min-h-screen flex flex-col"><PageTwo handlePrevious={handlePrevious} /></div>
   );
 };
 

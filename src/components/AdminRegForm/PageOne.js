@@ -60,7 +60,7 @@ const PageOne = ({ handleNext }) => {
             helperText={formik.touched.date && formik.errors.date}
             margin="normal"
           />
-          <div className=" w-full flex justify-center py-2 px-4 border rounded-3xl border-transparent text-sm font-medium rounded-md text-white">
+          <div className=" w-full flex justify-center py-2 px-4 border rounded-3xl border-transparent text-sm font-medium  text-white">
           <Button type="submit" style={{backgroundColor:'#FFB03A', color:'#fff', borderRadius:'20px', textTransform:'none'}} fullWidth>
             Next
           </Button>
