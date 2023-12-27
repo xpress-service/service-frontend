@@ -1,3 +1,4 @@
+import { createContext, useState } from "react"
 import { Routes, Route } from 'react-router-dom';
 import AdminLogin from './components/AdminLogin';
 import UserLogin from './components/UserLogin';
@@ -14,7 +15,7 @@ import AdminProfile from './pages/AdminProfile'
 import AboutUs from './components/LandingPage/AboutUs';
 
 
-
+export const SetPopupContext = createContext()
 function App() {
   return (
    <Routes>
