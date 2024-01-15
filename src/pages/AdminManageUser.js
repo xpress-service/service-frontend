@@ -6,15 +6,13 @@ import Location from "../components/ManageUser/Location";
 import AdminLayout from "../components/AdminLayout/AdminLayout";
 
 const AdminManageUser = () => {
-  return (
-    <AdminLayout>    
-      
-      <Location />
-      <Vendors />
-      <Bookings />
-      
-    </AdminLayout>
-  );
+	return (
+		<AdminLayout>
+			<Location />
+			<Vendors />
+			<Bookings />
+		</AdminLayout>
+	);
 };
 
 export default AdminManageUser;

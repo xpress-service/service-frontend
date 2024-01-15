@@ -1,7 +1,4 @@
-// src/components/BookingsTable.js
 import React from 'react';
-import UserSideNav from '../components/UserSideNav/UserSideNav';
-import UserHeader from '../components/UserHeader/UserHeader';
 import { useState } from 'react';
 import { FaUser } from "react-icons/fa"
 import UserLayout from '../components/UserLayout/UserLayout';
