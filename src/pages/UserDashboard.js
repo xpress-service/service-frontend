@@ -3,19 +3,21 @@ import React, {useState} from 'react';
 import UserSideNav from '../components/UserSideNav/UserSideNav';
 import UserHeader from '../components/UserHeader/UserHeader';
 import { FaUser } from "react-icons/fa"
+import UserLayout from '../components/UserLayout/UserLayout';
 
 
 const PendingBookingsTable = ({ bookings }) => {
     const [user, setUser] = useState({})
   return (
-    <div className='flex overflow-auto bg-[#FF9B05]'>
-      <div className='mx-5 my-5'>
-      <UserSideNav/>
-      </div>
-      <div className='flex-1 flex flex-col conatiner mt-4'>
-        <div className='mx-4'>
-      <UserHeader/>
-      </div>
+    <UserLayout>    
+      {/* // <div className='flex overflow-auto bg-[#FF9B05]'>
+    //   <div className='mx-5 my-5'>
+    //   <UserSideNav/>
+    //   </div>
+    //   <div className='flex-1 flex flex-col conatiner mt-4'>
+    //     <div className='mx-4'>
+    //   <UserHeader/>
+    //   </div> */}
 
       <div className='my-4 mx-4'>
       <div className="bg-[#F4F4F4] shadow-md rounded-2xl overflow-hidden">
@@ -42,6 +44,9 @@ const PendingBookingsTable = ({ bookings }) => {
           </td>
           <td className="px-6 py-3 bg-white text-left  text-xs leading-4 font-medium text-black  tracking-wider">
             75%
+            <div className="bg-[#FFEBCC] h-2 rounded-full w-36">
+  <div class="bg-[#FF9B05] h-full w-1/2 rounded-full"></div>
+</div>
             <td>
               <span></span>
             </td>
@@ -58,6 +63,9 @@ const PendingBookingsTable = ({ bookings }) => {
           </td>
           <td className="px-6 py-3 bg-white text-left  text-xs leading-4 font-medium text-black  tracking-wider">
             60%
+            <div className="bg-[#FFEBCC] h-2 rounded-full w-36">
+  <div class="bg-[#FF9B05] h-full w-1/2 rounded-full"></div>
+</div>
             <td>
               <span></span>
             </td>
@@ -356,8 +364,10 @@ const PendingBookingsTable = ({ bookings }) => {
     </div>
     </div>
     
-    </div>
-    </div> 
+    {/* // </div>
+    // </div>  */}
+    </UserLayout>
+
   );
 };
 

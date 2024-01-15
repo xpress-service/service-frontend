@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdWork, MdDashboard } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-//import logo from "../assets/logopic_white.png";
-//import { SidebarContext } from "../../contexts/SidebarContext";
 
 const UserSideNav = ({ page }) => {
   const LinkReset = "p-0";
@@ -12,8 +10,6 @@ const UserSideNav = ({ page }) => {
   const regularPage =
     "text-black font-bold cursor-pointer py-2 px-4 flex items-center w-full hover:bg-slate-50 hover:text-slate-700";
 
-  //const navigate = useNavigate();
-  //const { showSidebar } = useContext(SidebarContext);
   const [activeLink, setActiveLink] = useState("dashboard");
 
   const handleLinkClick = (link) => {
@@ -21,16 +17,8 @@ const UserSideNav = ({ page }) => {
   };
 
   return (
-    <div className="bg-[#FF9B05]">
-    
-      <div className="relative h-[125vh] flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55">
-        {/* <Link to="/candidate-dashboard" className={LinkReset}>
-          <div className="flex items-center px-2">
-            <img src={logo} alt="Edge" className="w-20" />
-            <span className="text-lg text-white font-bold">THE EDGE APP</span>
-          </div>
-        </Link> */}
-
+    <div className="h-screen ">
+      <div className="h-screen fixed flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55">
         <div className="flex flex-col mt-8">
           <Link to="/user-dashboard" className={LinkReset}>
          

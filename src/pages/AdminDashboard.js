@@ -3,18 +3,12 @@ import React, {useState} from 'react';
 import AdminSideNav from '../components/AdminSideNav/AdminSideNav';
 import AdminHeader from '../components/AdminHeader/AdminHeader';
 import { FaUser } from "react-icons/fa"
+import AdminLayout from '../components/AdminLayout/AdminLayout';
 
 const PendingBookingsTable = ({ bookings }) => {
   const [user, setUser] = useState({})
   return (
-    <div className='flex  overflow-auto bg-[#FF9B05]'>
-      <div className='mx-5 my-5'>
-      <AdminSideNav/>
-      </div>
-      <div className='flex-1 flex flex-col conatiner  mt-4'>
-        <div className='ml-4 mr-5'>
-      <AdminHeader/>
-      </div>
+    <AdminLayout>
       <div className='flex'>
       <div className="w-3/5 p-4">
       <div className="bg-[#F4F4F4] shadow-md rounded-2xl overflow-hidden">
@@ -670,9 +664,7 @@ const PendingBookingsTable = ({ bookings }) => {
     </div>
     </div>
     </div>
-    
-    </div>
-    </div> 
+    </AdminLayout>
   );
 };
 
