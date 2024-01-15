@@ -4,21 +4,14 @@ import UserSideNav from '../components/UserSideNav/UserSideNav';
 import UserHeader from '../components/UserHeader/UserHeader';
 import { useState } from 'react';
 import { FaUser } from "react-icons/fa"
+import UserLayout from '../components/UserLayout/UserLayout';
 
 
 const UserTransaction = ({ bookings }) => {
 
     const [user, setUser] = useState({})
   return (
-    <div className='flex  bg-[#FF9B05]'>
-      <div className='mx-5 my-5'>
-      <UserSideNav/>
-      </div>
-      <div className='flex-1 flex flex-col mt-4'>
-        <div className='ml-4 mr-5'>
-          <UserHeader/>
-      </div>
-
+    <UserLayout>
       <div className='my-4 mx-4'>
       <div className="bg-[#F4F4F4] shadow-md rounded-2xl overflow-hidden">
         <div className='flex justify-between mb-4'>
@@ -213,10 +206,7 @@ const UserTransaction = ({ bookings }) => {
     </table>
     </div>
     </div>
-      
-    
-    </div>
-    </div> 
+    </UserLayout>
   );
 };
 
