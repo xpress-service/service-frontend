@@ -18,14 +18,14 @@ const UserHeader = ({ page, setQuery }) => {
 
   
   return (
-    <nav className="sticky top-0 w-full flex items-center justify-between h-16 px-8 bg-[#F7F9FD] rounded-full">
-      <form className="relative sm:w-1/2 w-2/5 flex items-center">
+    <nav className="sticky top-0 w-full flex items-center justify-between px-8 bg-[#F7F9FD] rounded-full">
+      <form className="relative sm:w-1/2 w-2/5 flex items-center h-20 ">
         <input
           type="search"
           name="search"
           onChange={event => setQuery(event.target.value)}
           placeholder="Search"
-          className="w-ful bg-[#ECEBEB] pl-8 pr-4 py-2 rounded-full border-none text-black text-sm outline-none focus-within:ring-2 focus-within:ring-blue4500 placeholder:text-gray-400"
+          className="w-ful h-12 bg-[#ECEBEB] pl-8 pr-4 py-2 rounded-full border-none text-black text-sm outline-none focus-within:ring-2 focus-within:ring-blue4500 placeholder:text-gray-400"
         />
         <IoIosSearch className="w-5 h-5 absolute left-2.5 text-black cursor-pointer" />
       </form>

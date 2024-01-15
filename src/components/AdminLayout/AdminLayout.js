@@ -4,12 +4,16 @@ import AdminSideNav from '../AdminSideNav/AdminSideNav';
 
 const AdminLayout = ({ children }) => {
   return (
-    <div className="flex h-screen">
+    <div className="flex bg-[#FF9B05] py-2 px-6">
+      {/* UserSideNav */}
       <AdminSideNav />
-      <div className="flex flex-col flex-1">
+
+      <div className="flex flex-col flex-1 h-screen px-6 ml-48">
+        {/* UserHeader */}
         <AdminHeader />
-        <main className="bg-[#FF9B05] flex items-center justify-center h-screen w-full">
-          <div className="w-[976px] items-center justify-center py-4 rounded-3xl">
+
+        <main className="h-screen flex items-center justify-center flex-1">
+          <div className="w-full max-w-[976px] px-4 md:px-8 py-4 rounded-3xl h-screen ">
             {children}
           </div>
         </main>

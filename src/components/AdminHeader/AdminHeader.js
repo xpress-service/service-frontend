@@ -25,7 +25,7 @@ const AdminHeader = ({ page, setQuery }) => {
           name="search"
           onChange={event => setQuery(event.target.value)}
           placeholder="Search"
-          className="w-ful bg-[#ECEBEB] pl-8 pr-4 py-2 rounded-full border-none text-black text-sm outline-none focus-within:ring-2 focus-within:ring-blue4500 placeholder:text-gray-400"
+          className="w-ful h-12 bg-[#ECEBEB] pl-8 pr-4 py-2 rounded-full border-none text-black text-sm outline-none focus-within:ring-2 focus-within:ring-blue4500 placeholder:text-gray-400"
         />
         <IoIosSearch className="w-5 h-5 absolute left-2.5 text-black cursor-pointer" />
       </form>
