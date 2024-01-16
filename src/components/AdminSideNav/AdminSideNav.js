@@ -23,7 +23,7 @@ const AdminSideNav = ({ page }) => {
   return (
     <div className="bg-[#FF9B05]">
     
-      <div className="relative h-[125vh] flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55">
+    <div className="h-screen fixed flex flex-col justify-between rounded-2xl bg-[#F7F9FD] py-4 w-55">
         {/* <Link to="/candidate-dashboard" className={LinkReset}>
           <div className="flex items-center px-2">
             <img src={logo} alt="Edge" className="w-20" />

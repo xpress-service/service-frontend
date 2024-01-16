@@ -16,6 +16,7 @@ import UserTracking from './pages/UserTracking'
 import AdminDashboard from './pages/AdminDashboard';
 import UserDashboard from './pages/UserDashboard';
 import ManageBookings from './pages/ManageBookings';
+import AboutUs from './components/LandingPage/AboutUs';
 import AdminProfile from './pages/AdminProfile';
 import UserProfile from './pages/UserProfile';
 import RequireUser from "./components/Layout/RequireUser";
@@ -36,6 +37,9 @@ const queryClient = new QueryClient({
     },
   },
 })
+
+
+
 
 
 
