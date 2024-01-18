@@ -201,7 +201,7 @@ const AdminLogin = () => {
 
 						<div className="flex items-center">
 							<button
-								onClick={() => navigate("/user-reg")}
+								onClick={() => navigate("/admin-reg")}
 								className="group relative w-full flex justify-center py-2 px-4 border rounded-3xl border-transparent text-sm font-medium  text-white bg-stone-800 hover:bg-stone-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-300"
 							>
 								Create account
@@ -214,4 +214,3 @@ const AdminLogin = () => {
 	);
 };
 export default AdminLogin;
-

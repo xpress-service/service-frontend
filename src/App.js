@@ -7,10 +7,10 @@ import UserReg from './pages/UserReg/UserReg';
 import AdminReg from './pages/AdminReg/AdminReg';
 import PersistLogin from "./components/PersistLogin/PersistLogin"
 import VerifyAdminRole from "./components/VerifyAdminRole/VerifyAdminRole"
-import VerifyUserRole from "./components/VerifiyUserRole/VerifyUserRole"
+import VerifyUserRole from "./components/VerifyUserRole/VerifyUserRole"
 import LandingPage from './components/LandingPage/LandingPage';
 import AdminManageUser from './pages/AdminManageUser';
-//import ErrorPage from "./pages/ErrorPage/ErrorPage"
+import ErrorPage from "./pages/ErrorPage/ErrorPage"
 import UserTransaction from './pages/UserTransaction';
 import UserTracking from './pages/UserTracking'
 import AdminDashboard from './pages/AdminDashboard';
@@ -19,9 +19,9 @@ import ManageBookings from './pages/ManageBookings';
 import AboutUs from './components/LandingPage/AboutUs';
 import AdminProfile from './pages/AdminProfile';
 import UserProfile from './pages/UserProfile';
-import RequireUser from "./components/Layout/RequireUser";
-import Layout from "./components/Layout/Layout";
-import RequireAdmin from "./components/Layout/RequireAdmin";
+import RequireUser from "./layout/RequireUser";
+import Layout from "./layout/Layout";
+import RequireAdmin from "./layout/RequireAdmin";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { HelmetProvider } from "react-helmet-async";
@@ -91,7 +91,7 @@ function App() {
     </Route>
 
     {/**catch all*/}
-    {/* <Route path="*" element={<ErrorPage />} />  */}
+    <Route path="*" element={<ErrorPage />} /> 
     </Route>
     </Routes>
     </HelmetProvider>
