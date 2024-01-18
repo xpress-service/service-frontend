@@ -15,7 +15,7 @@ const useRefreshToken = role => {
       })
       .catch(err => {
         console.error(err.response)
-        if (role?.includes("user")) {
+        if (role?.includes("applicant")) {
           navigate("/user-login", {
             state: {
               prevURL: location.pathname,
@@ -31,11 +31,17 @@ const useRefreshToken = role => {
           })
         }
 
-        
+        if (role?.includes("superAdmin")) {
+          navigate("/admin-login", {
+            state: {
+              prevURL: location.pathname,
+            },
+          })
+        }
       })
 
     if (response) {
-      if (response.data?.data?.role !== "user") {
+      if (response.data?.data?.role !== "applicant") {
         setAuth(prev => {
           return {
             ...prev,
