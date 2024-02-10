@@ -3,7 +3,7 @@ import { useParams, Outlet, useNavigate, Navigate } from "react-router-dom"
 import axios from "../../api/axios"
 import Loading from "../Loading/Loading"
 
-const VerifyUserRole = () => {
+const VerifyAdminRole = () => {
   const [data, setData] = useState()
   let params = useParams()
   let navigate = useNavigate()
@@ -39,4 +39,4 @@ const VerifyUserRole = () => {
   return <Loading />
 }
 
-export default VerifyUserRole
+export default VerifyAdminRole

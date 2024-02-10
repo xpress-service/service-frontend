@@ -89,7 +89,7 @@ const AdminReg = () => {
 	return (
 		<div className="bg-[#FF9B05] min-h-screen flex flex-col">
 			<div className="container max-w-sm mx-auto mt-10 mb-10 flex-1 flex flex-col items-center justify-center px-2">
-				<div className="bg-white px-6 py-8 rounded shadow-md text-black w-full rounded-3xl">
+				<div className="bg-white px-6 py-8 shadow-md text-black w-full rounded-3xl">
 					<div>
 						{message ? (
 							<p className="text-danger text-red-600 text-sm">

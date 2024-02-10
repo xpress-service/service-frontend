@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "../../assets/Xpress1.jpg"
+import logo from "../../assets/logopic.png"
 import { Helmet } from "react-helmet-async"
 
 const ErrorPage = () => {
@@ -10,7 +10,7 @@ const ErrorPage = () => {
       </Helmet>
       <nav className="flex items-center">
         <img src={logo} alt="Edge" className="w-20" />
-        <span className="text-lg text-white font-bold">THE ServiceXpress APP</span>
+        <span className="text-lg text-white font-bold">THE SERVICEXPRESS APP</span>
       </nav>
       <div className="flex items-center h-1/2 px-8">
         <div className="space-y-2">
